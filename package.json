@@ -1,0 +1,39 @@
+{
+  "name": "mesh-primitives",
+  "version": "1.0.0",
+  "description": "a short list of some mesh and primitive modules",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "mesh",
+    "primitive",
+    "glo-js",
+    "glo",
+    "stackgl",
+    "meshes",
+    "geom",
+    "geometries",
+    "geometrty",
+    "simplicial",
+    "complex",
+    "complexes"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/glo-js/mesh-primitives.git"
+  },
+  "homepage": "https://github.com/glo-js/mesh-primitives",
+  "bugs": {
+    "url": "https://github.com/glo-js/mesh-primitives/issues"
+  }
+}
