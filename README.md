@@ -13,7 +13,7 @@ In this context a "mesh primitive" is a plain JavaScript object which approximat
 
 ## format
 
-The `primitive-*` modules are tailored for rendering purposes (lighting, texturing, etc). Often, they are often not numerically robust.
+The `primitive-*` modules are tailored for rendering purposes (lighting, texturing, etc) and are typically used in prototypes and demos. Often, they are often not numerically robust.
 
 They provide indexed meshes with counter-clockwise triangles. The returned object has the following structure:
 
@@ -26,9 +26,11 @@ They provide indexed meshes with counter-clockwise triangles. The returned objec
 }
 ```
 
-# other mesh modules
+# generic mesh modules
 
-There are a number of other generalized mesh modules on npm. Some of them are numerically robust, and others are more useful for demo purposes. These general purpose meshes are often referred to as *simplicial complexes*.
+##### a.k.a. "simplicial complexes"
+
+There are a number of other generalized mesh modules on npm. Some of them are numerically robust. These general purpose meshes are often referred to as *"simplicial complexes"*.
 
 The positions are not always indexed, and may not provide `uvs` or `normals`. They don't always represent 2D or 3D meshes.
 
@@ -40,7 +42,36 @@ Examples:
 - [bunny](https://www.npmjs.com/package/bunny)
 - [snowden](https://www.npmjs.com/package/snowden)
 
-For a larger list of generalized meshes, and utilities for manipulating these structures, see [stack.gl/packages](http://stack.gl/packages/#hughsk/icosphere) under the "Geometry" heading.
+## manipulation
+
+There are dozens of modules for manipulating these data structures on npm, such as:
+
+- [mesh-combine](https://github.com/hughsk/mesh-combine)
+- [merge-vertices](https://github.com/thibauts/merge-vertices/blob/master/index.js)
+- [remove-degenerate-cells](https://github.com/thibauts/remove-degenerate-cells)
+- [normals](https://github.com/mikolalysenko/normals)
+- [convex-hull](https://www.npmjs.com/package/convex-hull)
+- [cdt2d](https://www.npmjs.com/package/cdt2d)
+- [simplify-path](https://www.npmjs.com/package/simplify-path)
+
+For a larger list of modules, see [stack.gl/packages](http://stack.gl/packages/#hughsk/icosphere) under the "Geometry" heading.
+
+## rendering
+
+There are a variety of modules to facilitate rendering of these 2D and 3D mesh modules.
+
+#### Canvas2D
+
+- [draw-triangles-2d](https://www.npmjs.com/package/draw-triangles-2d)
+
+#### ThreeJS
+
+- [three-simplicial-complex](https://github.com/Jam3/three-simplicial-complex)
+
+#### stackgl
+
+- [mesh-viewer](https://www.npmjs.com/package/mesh-viewer)
+- [gl-geometry](https://www.npmjs.com/package/gl-geometry)
 
 ## License
 
