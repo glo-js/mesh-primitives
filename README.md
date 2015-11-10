@@ -30,9 +30,16 @@ They provide indexed meshes with counter-clockwise triangles. The returned objec
 
 ##### a.k.a. "simplicial complexes"
 
-There are a number of other generalized mesh modules on npm. Some of them are numerically robust. These general purpose meshes are often referred to as *"simplicial complexes"*.
+There are a number of other generalized mesh modules on npm. Some of them are numerically robust. These general purpose meshes are often referred to as **"simplicial complexes"**.
 
-The positions are not always indexed, and may not provide `uvs` or `normals`. They don't always represent 2D or 3D meshes.
+```
+{
+  positions: [ [x, y, z], [x, y, z], ... ], // n-dimensional
+  cells: [ [a, b, c], [a, b, c], ... ]      // optional
+}
+```
+
+The positions are not always indexed, and may not provide `uvs` or `normals`. They don't always represent 2D or 3D meshes, and the winding order might not always be consistent.
 
 Examples:
 
@@ -41,6 +48,10 @@ Examples:
 - [cube-mesh](https://www.npmjs.com/package/cube-mesh)
 - [bunny](https://www.npmjs.com/package/bunny)
 - [snowden](https://www.npmjs.com/package/snowden)
+- [geo-piecering](https://www.npmjs.com/package/geo-piecering)
+- [geo-arc](https://www.npmjs.com/package/geo-arc)
+- [geo-asterisk](https://www.npmjs.com/package/geo-asterisk)
+- [svg-mesh-3d](https://www.npmjs.com/package/svg-mesh-3d)
 
 ## manipulation
 
