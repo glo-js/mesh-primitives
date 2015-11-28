@@ -10,6 +10,7 @@ In this context a "mesh primitive" is a plain JavaScript object which approximat
 - [primitive-icosphere](https://www.npmjs.com/package/primitive-icosphere)
 - [primitive-torus](https://www.npmjs.com/package/primitive-torus)
 - [primitive-quad](https://www.npmjs.com/package/primitive-quad)
+- [primitive-cube](https://www.npmjs.com/package/primitive-cube)
 
 ## format
 
